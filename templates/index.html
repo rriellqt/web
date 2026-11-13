@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E0B1A">
+<title>ᴍᴇᴅɪᴀ ꜱᴀᴠᴇʀ</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z"/></symbol>
+<symbol id="play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+<symbol id="audio" viewBox="0 0 24 24"><path d="M5 9h3v6H5zM10.5 5h3v14h-3zM16 8h3v8h-3z"/></symbol>
+<symbol id="image" viewBox="0 0 24 24"><path d="M3 19l6-9 4 5 3-4 5 8z"/></symbol>
+<symbol id="slides" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></symbol>
+<symbol id="grid" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></symbol>
+<symbol id="list" viewBox="0 0 24 24"><path d="M4 6h16v3H4zM4 11h16v3H4zM4 16h16v3H4z"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><path d="M12 4a8 8 0 100 16 8 8 0 000-16zm1 4v4l3 2-1 1.6-4-2.6V8z"/></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9H6v-9H3z"/></symbol>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M4 5h16v11h-9l-5 4v-4H4z"/></symbol>
+<symbol id="help" viewBox="0 0 24 24"><path d="M12 4a8 8 0 100 16 8 8 0 000-16zm-1 11h2v2h-2zm1-7a2.5 2.5 0 011 4.7V14h-2v-1.8A2.5 2.5 0 0112 8z"/></symbol>
+</svg>
+
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+<div class="orb o3"></div>
+
+<div class="splash" id="splash">
+<svg class="mark"><use href="#star"/></svg>
+<div class="name rise">ᴍᴇᴅɪᴀ ꜱᴀᴠᴇʀ</div>
+<div class="track"><div class="fill load"></div></div>
+</div>
+
+<header class="bar glass">
+<button class="round" id="open" type="button" aria-label="Open menu"><svg class="ic"><use href="#list"/></svg></button>
+<a class="brand" href="#/home"><svg class="ic lav"><use href="#star"/></svg>ᴍᴇᴅɪᴀ ꜱᴀᴠᴇʀ</a>
+<div class="live-tag"><span class="live"></span>ᴏɴʟɪɴᴇ</div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="drawer glass" id="drawer" aria-label="Menu">
+<div class="drawer-top">
+<a class="brand" href="#/home"><svg class="ic lav"><use href="#star"/></svg>ᴍᴇᴅɪᴀ ꜱᴀᴠᴇʀ</a>
+<button class="round" id="close" type="button" aria-label="Close menu">✕</button>
+</div>
+<a class="btn pri" href="#/home">＋ ɴᴇᴡ ᴅᴏᴡɴʟᴏᴀᴅ</a>
+<div class="label">ᴛᴏᴏʟꜱ</div>
+<a class="item" href="#/video"><b class="pk"><svg class="ic"><use href="#play"/></svg></b>ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ</a>
+<a class="item" href="#/audio"><b class="lv"><svg class="ic"><use href="#audio"/></svg></b>ᴀᴜᴅɪᴏ ᴇxᴛʀᴀᴄᴛᴏʀ</a>
+<a class="item" href="#/image"><b class="sf"><svg class="ic"><use href="#image"/></svg></b>ɪᴍᴀɢᴇ ꜱᴀᴠᴇʀ</a>
+<a class="item" href="#/slideshow"><b class="vi"><svg class="ic"><use href="#slides"/></svg></b>ꜱʟɪᴅᴇꜱʜᴏᴡ</a>
+<a class="item" href="#/montage"><b class="lv"><svg class="ic"><use href="#grid"/></svg></b>ᴛɪᴋᴛᴏᴋ ᴍᴏɴᴛᴀɢᴇ</a>
+<a class="item" href="#/batch"><b class="pk"><svg class="ic"><use href="#list"/></svg></b>ʙᴀᴛᴄʜ ʟɪɴᴋꜱ</a>
+<div class="label">ʟɪʙʀᴀʀʏ</div>
+<a class="item" href="#/history"><b class="lv"><svg class="ic"><use href="#clock"/></svg></b>ʜɪꜱᴛᴏʀʏ</a>
+<a class="item" href="#/favorites"><b class="pk"><svg class="ic"><use href="#star"/></svg></b>ꜰᴀᴠᴏʀɪᴛᴇꜱ</a>
+<div class="label">ᴍᴏʀᴇ</div>
+<a class="item" href="#/sites"><b class="sf"><svg class="ic"><use href="#grid"/></svg></b>ꜱᴜᴘᴘᴏʀᴛᴇᴅ ꜱɪᴛᴇꜱ</a>
+<a class="item" href="#/faq"><b class="lv"><svg class="ic"><use href="#help"/></svg></b>ꜰᴀǫ</a>
+<a class="item" href="#/contact"><b class="pk"><svg class="ic"><use href="#chat"/></svg></b>ᴄᴏɴᴛᴀᴄᴛ</a>
+<a class="dev glass" href="{{ contact }}" target="_blank" rel="noopener"><span class="avatar"><svg class="ic"><use href="#star"/></svg></span><span><strong>ᴅᴇᴠᴇʟᴏᴘᴇʀ</strong><small>t.me/rriellqt</small></span></a>
+</nav>
+
+<main>
+<section class="view" data-view="home">
+<div>
+<div class="mute">ᴡᴇʟᴄᴏᴍᴇ ʙᴀᴄᴋ</div>
+<h1>ᴡʜᴀᴛ ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ<br><span class="pink">ᴛᴏ ꜱᴀᴠᴇ ᴛᴏᴅᴀʏ?</span></h1>
+</div>
+<form class="field glass" id="homeform">
+<label class="sr" for="homelink">Media link</label>
+<input id="homelink" type="url" inputmode="url" autocomplete="off" placeholder="ᴘᴀꜱᴛᴇ ʏᴏᴜʀ ʟɪɴᴋ" required>
+<button class="btn pri" type="submit">ꜰᴇᴛᴄʜ</button>
+</form>
+<p class="note" id="homenote" role="status"></p>
+<div>
+<div class="head"><h2>ǫᴜɪᴄᴋ ᴛᴏᴏʟꜱ</h2><a href="#/sites">ꜱᴇᴇ ꜱɪᴛᴇꜱ</a></div>
+<div class="tiles">
+<a class="tile" href="#/video"><b class="pk"><svg class="ic"><use href="#play"/></svg></b>ᴠɪᴅᴇᴏ</a>
+<a class="tile" href="#/audio"><b class="lv"><svg class="ic"><use href="#audio"/></svg></b>ᴀᴜᴅɪᴏ</a>
+<a class="tile" href="#/image"><b class="sf"><svg class="ic"><use href="#image"/></svg></b>ɪᴍᴀɢᴇ</a>
+<a class="tile" href="#/slideshow"><b class="vi"><svg class="ic"><use href="#slides"/></svg></b>ꜱʟɪᴅᴇꜱ</a>
+<a class="tile" href="#/montage"><b class="lv"><svg class="ic"><use href="#grid"/></svg></b>ᴍᴏɴᴛᴀɢᴇ</a>
+<a class="tile" href="#/batch"><b class="pk"><svg class="ic"><use href="#list"/></svg></b>ʙᴀᴛᴄʜ</a>
+<a class="tile" href="#/sites"><b class="vi"><svg class="ic"><use href="#grid"/></svg></b>ꜱɪᴛᴇꜱ</a>
+<a class="tile" href="#/history"><b class="sf"><svg class="ic"><use href="#clock"/></svg></b>ʜɪꜱᴛᴏʀʏ</a>
+</div>
+</div>
+<div>
+<div class="head"><h2>ʀᴇᴄᴇɴᴛ</h2><a href="#/history">ꜱᴇᴇ ᴀʟʟ</a></div>
+<div class="list glass" id="recent"></div>
+</div>
+</section>
+
+<section class="view" data-view="tool">
+<div>
+<h1 id="tooltitle"></h1>
+<p class="mute" id="toolhint"></p>
+</div>
+<form class="field glass" id="toolform">
+<label class="sr" for="toollink">Media link</label>
+<input id="toollink" type="url" inputmode="url" autocomplete="off" placeholder="https://" required>
+<button class="btn pri" type="submit" id="toolgo">ꜰᴇᴛᴄʜ</button>
+</form>
+<p class="note" id="toolnote" role="status"></p>
+<div class="card glass" id="loader" hidden>
+<div class="step done"><i></i><span>ᴄʜᴇᴄᴋɪɴɢ ʟɪɴᴋ</span></div>
+<div class="step"><i></i><span>ꜰɪɴᴅɪɴɢ ꜰᴏʀᴍᴀᴛꜱ</span></div>
+<div class="step"><i></i><span>ᴘʀᴇᴘᴀʀɪɴɢ ꜰɪʟᴇ</span></div>
+<div class="progress"><span class="mute">ᴘʀᴏɢʀᴇꜱꜱ</span><strong id="percent">0%</strong></div>
+<div class="track"><div class="fill" id="bar"></div></div>
+</div>
+<div class="card glass" id="result" hidden></div>
+</section>
+
+<section class="view" data-view="batch">
+<div>
+<h1>ʙᴀᴛᴄʜ ʟɪɴᴋꜱ</h1>
+<p class="mute">ᴏɴᴇ ʟɪɴᴋ ᴘᴇʀ ʟɪɴᴇ. ᴡᴇ ꜰᴇᴛᴄʜ ᴛʜᴇᴍ ᴏɴᴇ ʙʏ ᴏɴᴇ.</p>
+</div>
+<form class="card glass stack" id="batchform">
+<label class="sr" for="batchlinks">Links</label>
+<textarea id="batchlinks" rows="6" placeholder="https://" required></textarea>
+<div class="seg" id="batchfmt" role="group" aria-label="Format">
+<button type="button" class="on" data-fmt="video">ᴠɪᴅᴇᴏ</button>
+<button type="button" data-fmt="audio">ᴀᴜᴅɪᴏ</button>
+<button type="button" data-fmt="image">ɪᴍᴀɢᴇ</button>
+</div>
+<button class="btn accent" type="submit" id="batchgo">ꜱᴛᴀʀᴛ ʙᴀᴛᴄʜ</button>
+</form>
+<div class="list glass" id="batchlist" hidden></div>
+</section>
+
+<section class="view" data-view="history">
+<div class="head"><h1>ʜɪꜱᴛᴏʀʏ</h1><button class="text" id="clearhistory" type="button">ᴄʟᴇᴀʀ</button></div>
+<div class="list glass" id="historylist"></div>
+</section>
+
+<section class="view" data-view="favorites">
+<div class="head"><h1>ꜰᴀᴠᴏʀɪᴛᴇꜱ</h1></div>
+<div class="list glass" id="favoritelist"></div>
+</section>
+
+<section class="view" data-view="sites">
+<div>
+<h1>ꜱᴜᴘᴘᴏʀᴛᴇᴅ ꜱɪᴛᴇꜱ</h1>
+<p class="mute" id="sitecount"></p>
+</div>
+<div class="stack" id="sitelist"></div>
+</section>
+
+<section class="view" data-view="faq">
+<h1>ꜰᴀǫ</h1>
+<div class="list glass">
+<details><summary>Why does a download open in a new tab?</summary><p>Most sites host the file on their own servers, so your browser opens the direct link. Use the save option in your browser to keep it.</p></details>
+<details><summary>Why do I have to wait between requests?</summary><p>Each connection can send one request every 10 seconds so the service stays fast for everyone.</p></details>
+<details><summary>How long do montage files last?</summary><p>A generated TikTok montage can be downloaded once and is removed after one hour.</p></details>
+<details><summary>Why is a format missing for a site?</summary><p>Each site supports only the formats it publishes. The detected site shows what is available.</p></details>
+<details><summary>Where is my history stored?</summary><p>History and favorites stay in your browser on this device. Nothing about them is sent to the server.</p></details>
+</div>
+</section>
+
+<section class="view" data-view="contact">
+<h1>ᴄᴏɴᴛᴀᴄᴛ</h1>
+<div class="list glass">
+<a class="row" href="{{ contact }}" target="_blank" rel="noopener"><span class="grow"><strong>ᴅᴇᴠᴇʟᴏᴘᴇʀ</strong><small>t.me/rriellqt</small></span></a>
+<a class="row" href="{{ channel }}" target="_blank" rel="noopener"><span class="grow"><strong>ᴄʜᴀɴɴᴇʟ</strong><small>t.me/celestecutiee</small></span></a>
+</div>
+</section>
+</main>
+
+<nav class="tabs glass" aria-label="Main">
+<a href="#/home" data-tab="home"><svg class="ic"><use href="#home"/></svg>ʜᴏᴍᴇ</a>
+<a href="#/video" data-tab="tool"><svg class="ic"><use href="#grid"/></svg>ᴛᴏᴏʟꜱ</a>
+<a href="#/history" data-tab="history"><svg class="ic"><use href="#clock"/></svg>ʜɪꜱᴛᴏʀʏ</a>
+<a href="#/sites" data-tab="sites"><svg class="ic"><use href="#list"/></svg>ꜱɪᴛᴇꜱ</a>
+</nav>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+                      </html>
